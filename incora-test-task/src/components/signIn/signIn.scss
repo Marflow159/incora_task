@@ -1,0 +1,67 @@
+.formSign{
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    height: 200px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    gap: 20px;
+
+    margin: 40px auto;
+
+    box-shadow: 5px 5px 5px black;
+
+    div{
+        position: relative;
+
+        input{
+
+            background-color: transparent;
+            transition: outline-color 500ms;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: black;
+            
+            border: 2px solid gray;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+        }
+        input:hover,
+        input:focus,
+        input:active{
+            transition: 0.3s ease;
+            border: 2px solid orangered;
+        }
+        label{
+            position: absolute;
+            top: 0;
+            left: 10px;
+            transform: translateY(50%);
+            transition: translate 500ms, scale 500ms;
+        }
+
+        input:focus+label,
+        input:valid+label {
+            padding-inline: 4px;
+            translate: 10px -17px;
+            scale: 0.9;
+            background-color: white;
+        }
+    }
+}
+
+.d0{
+    display: none;
+}
+
+.signOut{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

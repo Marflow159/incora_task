@@ -1,0 +1,118 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 5px 5px 5px black;
+
+    img {
+        display: flex;
+        margin: auto;
+        height: 100px;
+    }
+
+    &__item:last-of-type {
+        p {
+            border: none;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: orangered;
+
+            p {
+                border-color: orangered;
+            }
+
+        }
+
+        h3 {
+            margin: 20px 0 0 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px 0 5px 0;
+            border-bottom: 1px solid gray;
+        }
+    }
+}
+
+.allfeed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    margin-bottom: 20px;
+}
+
+.nasa-feed {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 20px;
+
+
+    box-shadow: 5px 5px 5px black;
+
+    img {
+        display: flex;
+        margin: auto;
+        height: 100px;
+    }
+}
+
+.nasa-feed:hover {
+    transition: 0.3s ease;
+    border: 1px solid orangered;
+    box-shadow: 5px 5px 5px orangered;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
+
+    svg {
+        width: 20px !important;
+        height: auto !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
+
+    video{
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
+}
+
+.backButton {
+    margin-left: 20px;
+}
